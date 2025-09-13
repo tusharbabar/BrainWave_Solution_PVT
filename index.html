@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📅 Day Planner</h1>
+    <p id="date"></p>
+    <p id="day"></p>
+  </header>
+
+  <main>
+    <div class="planner">
+      
+      <!-- Daily Overview -->
+      <section class="overview">
+        <h2>🌞 Daily Overview</h2>
+        <p id="quote">"Stay positive and keep moving forward!"</p>
+        <p><strong>Weather:</strong> ☀️ Sunny (placeholder)</p>
+      </section>
+
+      <!-- Add Tasks -->
+      <section class="task-section">
+        <h2>📝 Add Your Tasks</h2>
+        <div class="task-input">
+          <input type="time" id="task-time">
+          <input type="text" id="task-text" placeholder="Enter your task...">
+          <button id="add-task">Add Task</button>
+        </div>
+        <ul id="task-list"></ul>
+      </section>
+
+      <!-- Task Summary -->
+      <section class="summary">
+        <h2>📊 Task Summary</h2>
+        <p>Total Tasks: <span id="total-tasks">0</span></p>
+        <p>Completed: <span id="completed-tasks">0</span></p>
+        <p>Pending: <span id="pending-tasks">0</span></p>
+      </section>
+
+      <!-- Notes Section -->
+      <section class="notes">
+        <h2>🗒️ Quick Notes</h2>
+        <textarea id="notes" placeholder="Write your notes here..."></textarea>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Day Planner</p>
+  </footer>
+
+  <script src="Brainwave.js"></script>
+</body>
+</html>
